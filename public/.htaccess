@@ -1,0 +1,41 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # 1. Block Direct Access to Sensitive Files, Configurations & Dotfiles
+    RewriteRule ^(\.env|\.git|composer\.(json|lock)|package\.(json|lock)|artisan|deployment-manifest\.json|release-version\.txt) - [F,L,NC]
+
+    # 2. Block Direct Access to Private Application Directories
+    RewriteRule ^(app|bootstrap|config|database|resources|routes|vendor|tests|storage/logs|storage/framework)/ - [F,L,NC]
+
+    # 3. Prevent PHP Execution in Storage/Upload Directories
+    RewriteRule ^storage/.*\.(php|phtml|php3|php4|php5|php7|php8|phar|inc)$ - [F,L,NC]
+
+    # 4. Block direct installer access after installation lock
+    RewriteCond %{DOCUMENT_ROOT}/storage/installed.lock -f [OR]
+    RewriteCond %{DOCUMENT_ROOT}/installed.lock -f
+    RewriteRule ^installer/ - [F,L,NC]
+
+    # 5. Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # 6. Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # 7. Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# Block access to hidden files (.env, .git, etc.)
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

@@ -1,0 +1,1048 @@
+[
+    {
+        "version": "v2.2.0",
+        "release_id": "REL-N6ZYXQCP34",
+        "type": "patch",
+        "description": "114 files updated. SQL: 10 passed. Migrations: PASSED.",
+        "manifest": {
+            "files_count": 114,
+            "files_sample": [
+                "bootstrap\/app.php",
+                "app\/Http\/Middleware\/AdminAccessMiddleware.php",
+                "app\/Http\/Middleware\/BrandAccessMiddleware.php",
+                "app\/Http\/Middleware\/ClipperAccessMiddleware.php",
+                "app\/Http\/Middleware\/TecveqSecurityFirewall.php",
+                "app\/Services\/GoogleAuthService.php",
+                "app\/Models\/AuthSetting.php",
+                "app\/Models\/Campaign.php",
+                "app\/Models\/CampaignCountry.php",
+                "app\/Models\/CmsPage.php",
+                "app\/Models\/ErrorLog.php",
+                "app\/Models\/User.php",
+                "app\/helpers.php",
+                "app\/Http\/Controllers\/Brand\/BrandPanelController.php",
+                "app\/Http\/Controllers\/Admin\/AdminPanelController.php",
+                "app\/Http\/Controllers\/Admin\/CmsController.php",
+                "app\/Http\/Controllers\/Admin\/ErrorLogController.php",
+                "app\/Http\/Controllers\/Admin\/PluginModulesController.php",
+                "app\/Http\/Controllers\/Clipper\/ClipperPanelController.php",
+                "app\/Http\/Controllers\/Auth\/AuthController.php",
+                "app\/Http\/Controllers\/WebController.php",
+                "app\/Http\/Controllers\/FrontCmsController.php",
+                "app\/Services\/StripeCheckoutService.php",
+                "routes\/web.php",
+                "index.php",
+                "public\/index.php",
+                "clear_cache.php",
+                "clear-cache.php",
+                "public\/clear_cache.php",
+                "js\/gezux-animations.js",
+                "public\/js\/gezux-animations.js",
+                "resources\/views\/layouts\/app.blade.php",
+                "resources\/views\/pages\/home.blade.php",
+                "resources\/views\/pages\/campaign-detail.blade.php",
+                "resources\/views\/pages\/auth\/login.blade.php",
+                "resources\/views\/pages\/auth\/register.blade.php",
+                "resources\/views\/components\/tecveq-seo-meta-box.blade.php",
+                "resources\/views\/components\/tecveq-rich-editor.blade.php",
+                "resources\/views\/components\/navbar.blade.php",
+                "resources\/views\/partials\/notify.blade.php"
+            ],
+            "sql_report": {
+                "sql_files_found": [
+                    "database_update_patch.sql"
+                ],
+                "queries_executed": 10,
+                "queries_passed": 10,
+                "queries_failed": 0,
+                "errors": [],
+                "migration_output": "INFO  Nothing to migrate.",
+                "migration_status": "PASSED"
+            },
+            "manifest_data": {
+                "name": "GEZUX Performance Platform Core Update",
+                "version": "v2.2.0",
+                "type": "patch",
+                "build": "20261025",
+                "description": "Brand Profile Contact Email Database Schema Fix, System Updater MySQL PDO Unbuffered Query Resilience, Self-Healing Schema Handler, and Core Migration Suite.",
+                "changelog": [
+                    "Brand Profile Fix: Added missing contact_email and status columns to brands table",
+                    "Self-Healing Architecture: BrandPanelController dynamically creates contact_email if absent and safely falls back without 500 errors",
+                    "System Update Engine: Resolved MySQL PDO 2014 unbuffered query error with clean statement execution and auto-reconnect",
+                    "Database Patch SQL: Modernized SQL patch script free of unbuffered dynamic prepared statements",
+                    "Audience Country Targeting with per-market CPM rates and CDN high-def flags"
+                ]
+            }
+        },
+        "archive_hash": "649cbf1d9d96f87b05ff46f9fe3cd322525f9e971f08d552d872fb457e1a5d67",
+        "signature_verified": true,
+        "uploaded_by": 4,
+        "uploaded_at": "2026-10-29T01:52:33.894044Z",
+        "status": "COMPLETED",
+        "failure_stage": null,
+        "failure_message": null,
+        "completed_at": "2026-10-29T01:52:33.894053Z",
+        "id": 1793238753,
+        "created_at": "2026-10-29 01:52:33"
+    },
+    {
+        "version": "v2.2.0",
+        "release_id": "REL-LPX5LHLNS5",
+        "type": "patch",
+        "description": "112 files updated. SQL: 10 passed. Migrations: PASSED.",
+        "manifest": {
+            "files_count": 112,
+            "files_sample": [
+                "bootstrap\/app.php",
+                "app\/Http\/Middleware\/AdminAccessMiddleware.php",
+                "app\/Http\/Middleware\/BrandAccessMiddleware.php",
+                "app\/Http\/Middleware\/ClipperAccessMiddleware.php",
+                "app\/Http\/Middleware\/TecveqSecurityFirewall.php",
+                "app\/Services\/GoogleAuthService.php",
+                "app\/Models\/AuthSetting.php",
+                "app\/Models\/Campaign.php",
+                "app\/Models\/CampaignCountry.php",
+                "app\/Models\/CmsPage.php",
+                "app\/Models\/ErrorLog.php",
+                "app\/Models\/User.php",
+                "app\/helpers.php",
+                "app\/Http\/Controllers\/Brand\/BrandPanelController.php",
+                "app\/Http\/Controllers\/Admin\/AdminPanelController.php",
+                "app\/Http\/Controllers\/Admin\/CmsController.php",
+                "app\/Http\/Controllers\/Admin\/ErrorLogController.php",
+                "app\/Http\/Controllers\/Admin\/PluginModulesController.php",
+                "app\/Http\/Controllers\/Clipper\/ClipperPanelController.php",
+                "app\/Http\/Controllers\/Auth\/AuthController.php",
+                "app\/Http\/Controllers\/WebController.php",
+                "app\/Http\/Controllers\/FrontCmsController.php",
+                "app\/Services\/StripeCheckoutService.php",
+                "routes\/web.php",
+                "index.php",
+                "public\/index.php",
+                "clear_cache.php",
+                "clear-cache.php",
+                "public\/clear_cache.php",
+                "js\/gezux-animations.js",
+                "public\/js\/gezux-animations.js",
+                "resources\/views\/layouts\/app.blade.php",
+                "resources\/views\/pages\/home.blade.php",
+                "resources\/views\/pages\/campaign-detail.blade.php",
+                "resources\/views\/pages\/auth\/login.blade.php",
+                "resources\/views\/pages\/auth\/register.blade.php",
+                "resources\/views\/components\/tecveq-seo-meta-box.blade.php",
+                "resources\/views\/components\/tecveq-rich-editor.blade.php",
+                "resources\/views\/components\/navbar.blade.php",
+                "resources\/views\/partials\/notify.blade.php"
+            ],
+            "sql_report": {
+                "sql_files_found": [
+                    "database_update_patch.sql"
+                ],
+                "queries_executed": 10,
+                "queries_passed": 10,
+                "queries_failed": 0,
+                "errors": [],
+                "migration_output": "INFO  Nothing to migrate.",
+                "migration_status": "PASSED"
+            },
+            "manifest_data": {
+                "name": "GEZUX Performance Platform Core Update",
+                "version": "v2.2.0",
+                "type": "patch",
+                "build": "20261025",
+                "description": "Brand Profile Contact Email Database Schema Fix, System Updater MySQL PDO Unbuffered Query Resilience, Self-Healing Schema Handler, and Core Migration Suite.",
+                "changelog": [
+                    "Brand Profile Fix: Added missing contact_email and status columns to brands table",
+                    "Self-Healing Architecture: BrandPanelController dynamically creates contact_email if absent and safely falls back without 500 errors",
+                    "System Update Engine: Resolved MySQL PDO 2014 unbuffered query error with clean statement execution and auto-reconnect",
+                    "Database Patch SQL: Modernized SQL patch script free of unbuffered dynamic prepared statements",
+                    "Audience Country Targeting with per-market CPM rates and CDN high-def flags"
+                ]
+            }
+        },
+        "archive_hash": "6cf08551e7008ca58d42b253728c426ffd95613f91e504a5ba1da43cb75649f6",
+        "signature_verified": true,
+        "uploaded_by": 4,
+        "uploaded_at": "2026-10-28T11:26:20.419407Z",
+        "status": "COMPLETED",
+        "failure_stage": null,
+        "failure_message": null,
+        "completed_at": "2026-10-28T11:26:20.419413Z",
+        "id": 1793186780,
+        "created_at": "2026-10-28 11:26:20"
+    },
+    {
+        "version": "v2.2.0",
+        "release_id": "REL-O9TDSDW5CA",
+        "type": "patch",
+        "description": "111 files updated. SQL: 10 passed. Migrations: PASSED.",
+        "manifest": {
+            "files_count": 111,
+            "files_sample": [
+                "bootstrap\/app.php",
+                "app\/Http\/Middleware\/AdminAccessMiddleware.php",
+                "app\/Http\/Middleware\/BrandAccessMiddleware.php",
+                "app\/Http\/Middleware\/ClipperAccessMiddleware.php",
+                "app\/Http\/Middleware\/TecveqSecurityFirewall.php",
+                "app\/Services\/GoogleAuthService.php",
+                "app\/Models\/AuthSetting.php",
+                "app\/Models\/Campaign.php",
+                "app\/Models\/CampaignCountry.php",
+                "app\/Models\/CmsPage.php",
+                "app\/Models\/ErrorLog.php",
+                "app\/Models\/User.php",
+                "app\/helpers.php",
+                "app\/Http\/Controllers\/Brand\/BrandPanelController.php",
+                "app\/Http\/Controllers\/Admin\/AdminPanelController.php",
+                "app\/Http\/Controllers\/Admin\/CmsController.php",
+                "app\/Http\/Controllers\/Admin\/ErrorLogController.php",
+                "app\/Http\/Controllers\/Admin\/PluginModulesController.php",
+                "app\/Http\/Controllers\/Clipper\/ClipperPanelController.php",
+                "app\/Http\/Controllers\/Auth\/AuthController.php",
+                "app\/Http\/Controllers\/WebController.php",
+                "app\/Http\/Controllers\/FrontCmsController.php",
+                "app\/Services\/StripeCheckoutService.php",
+                "routes\/web.php",
+                "index.php",
+                "public\/index.php",
+                "clear_cache.php",
+                "clear-cache.php",
+                "public\/clear_cache.php",
+                "js\/gezux-animations.js",
+                "public\/js\/gezux-animations.js",
+                "resources\/views\/layouts\/app.blade.php",
+                "resources\/views\/pages\/home.blade.php",
+                "resources\/views\/pages\/campaign-detail.blade.php",
+                "resources\/views\/pages\/auth\/login.blade.php",
+                "resources\/views\/pages\/auth\/register.blade.php",
+                "resources\/views\/components\/tecveq-seo-meta-box.blade.php",
+                "resources\/views\/components\/tecveq-rich-editor.blade.php",
+                "resources\/views\/components\/navbar.blade.php",
+                "resources\/views\/partials\/notify.blade.php"
+            ],
+            "sql_report": {
+                "sql_files_found": [
+                    "database_update_patch.sql"
+                ],
+                "queries_executed": 10,
+                "queries_passed": 10,
+                "queries_failed": 0,
+                "errors": [],
+                "migration_output": "INFO  Nothing to migrate.",
+                "migration_status": "PASSED"
+            },
+            "manifest_data": {
+                "name": "GEZUX Performance Platform Core Update",
+                "version": "v2.2.0",
+                "type": "patch",
+                "build": "20261025",
+                "description": "Brand Profile Contact Email Database Schema Fix, System Updater MySQL PDO Unbuffered Query Resilience, Self-Healing Schema Handler, and Core Migration Suite.",
+                "changelog": [
+                    "Brand Profile Fix: Added missing contact_email and status columns to brands table",
+                    "Self-Healing Architecture: BrandPanelController dynamically creates contact_email if absent and safely falls back without 500 errors",
+                    "System Update Engine: Resolved MySQL PDO 2014 unbuffered query error with clean statement execution and auto-reconnect",
+                    "Database Patch SQL: Modernized SQL patch script free of unbuffered dynamic prepared statements",
+                    "Audience Country Targeting with per-market CPM rates and CDN high-def flags"
+                ]
+            }
+        },
+        "archive_hash": "81bf75d3aa44d004aa125c2abdfb33857cf3cb4076648ddb11529547dddc0625",
+        "signature_verified": true,
+        "uploaded_by": 4,
+        "uploaded_at": "2026-10-28T07:30:51.851262Z",
+        "status": "COMPLETED",
+        "failure_stage": null,
+        "failure_message": null,
+        "completed_at": "2026-10-28T07:30:51.851273Z",
+        "id": 1793172651,
+        "created_at": "2026-10-28 07:30:51"
+    },
+    {
+        "version": "v2.2.0",
+        "release_id": "REL-E2TBD86QBY",
+        "type": "patch",
+        "description": "120 files updated. SQL: 10 passed. Migrations: PASSED.",
+        "manifest": {
+            "files_count": 120,
+            "files_sample": [
+                "bootstrap\/app.php",
+                "app\/Http\/Middleware\/AdminAccessMiddleware.php",
+                "app\/Http\/Middleware\/BrandAccessMiddleware.php",
+                "app\/Http\/Middleware\/ClipperAccessMiddleware.php",
+                "app\/Http\/Middleware\/TecveqSecurityFirewall.php",
+                "app\/Services\/GoogleAuthService.php",
+                "app\/Models\/AuthSetting.php",
+                "app\/Models\/Campaign.php",
+                "app\/Models\/CampaignCountry.php",
+                "app\/Models\/CmsPage.php",
+                "app\/Models\/ErrorLog.php",
+                "app\/Models\/User.php",
+                "app\/helpers.php",
+                "app\/Http\/Controllers\/Brand\/BrandPanelController.php",
+                "app\/Http\/Controllers\/Admin\/AdminPanelController.php",
+                "app\/Http\/Controllers\/Admin\/CmsController.php",
+                "app\/Http\/Controllers\/Admin\/ErrorLogController.php",
+                "app\/Http\/Controllers\/Admin\/PluginModulesController.php",
+                "app\/Http\/Controllers\/Clipper\/ClipperPanelController.php",
+                "app\/Http\/Controllers\/Auth\/AuthController.php",
+                "app\/Http\/Controllers\/WebController.php",
+                "app\/Http\/Controllers\/FrontCmsController.php",
+                "app\/Services\/StripeCheckoutService.php",
+                "routes\/web.php",
+                "index.php",
+                "public\/index.php",
+                "clear_cache.php",
+                "clear-cache.php",
+                "public\/clear_cache.php",
+                "js\/gezux-animations.js",
+                "public\/js\/gezux-animations.js",
+                "resources\/views\/layouts\/app.blade.php",
+                "resources\/views\/pages\/home.blade.php",
+                "resources\/views\/pages\/campaign-detail.blade.php",
+                "resources\/views\/pages\/auth\/login.blade.php",
+                "resources\/views\/pages\/auth\/register.blade.php",
+                "resources\/views\/components\/tecveq-seo-meta-box.blade.php",
+                "resources\/views\/components\/tecveq-rich-editor.blade.php",
+                "resources\/views\/components\/navbar.blade.php",
+                "resources\/views\/partials\/notify.blade.php"
+            ],
+            "sql_report": {
+                "sql_files_found": [
+                    "database_update_patch.sql"
+                ],
+                "queries_executed": 10,
+                "queries_passed": 10,
+                "queries_failed": 0,
+                "errors": [],
+                "migration_output": "INFO  Nothing to migrate.",
+                "migration_status": "PASSED"
+            },
+            "manifest_data": {
+                "name": "GEZUX Performance Platform Core Update",
+                "version": "v2.2.0",
+                "type": "patch",
+                "build": "20261025",
+                "description": "Brand Profile Contact Email Database Schema Fix, System Updater MySQL PDO Unbuffered Query Resilience, Self-Healing Schema Handler, and Core Migration Suite.",
+                "changelog": [
+                    "Brand Profile Fix: Added missing contact_email and status columns to brands table",
+                    "Self-Healing Architecture: BrandPanelController dynamically creates contact_email if absent and safely falls back without 500 errors",
+                    "System Update Engine: Resolved MySQL PDO 2014 unbuffered query error with clean statement execution and auto-reconnect",
+                    "Database Patch SQL: Modernized SQL patch script free of unbuffered dynamic prepared statements",
+                    "Audience Country Targeting with per-market CPM rates and CDN high-def flags"
+                ]
+            }
+        },
+        "archive_hash": "93b19a6fc0a694750de3a36939d13a3b3a2f09b2b242bb3aa73f006a01c4fab0",
+        "signature_verified": true,
+        "uploaded_by": 4,
+        "uploaded_at": "2026-10-27T13:03:55.264668Z",
+        "status": "COMPLETED",
+        "failure_stage": null,
+        "failure_message": null,
+        "completed_at": "2026-10-27T13:03:55.264674Z",
+        "id": 1793106235,
+        "created_at": "2026-10-27 13:03:55"
+    },
+    {
+        "version": "v2.2.0",
+        "release_id": "REL-5O3UOO6QHP",
+        "type": "patch",
+        "description": "112 files updated. SQL: 10 passed. Migrations: PASSED.",
+        "manifest": {
+            "files_count": 112,
+            "files_sample": [
+                "bootstrap\/app.php",
+                "app\/Http\/Middleware\/AdminAccessMiddleware.php",
+                "app\/Http\/Middleware\/BrandAccessMiddleware.php",
+                "app\/Http\/Middleware\/ClipperAccessMiddleware.php",
+                "app\/Http\/Middleware\/TecveqSecurityFirewall.php",
+                "app\/Services\/GoogleAuthService.php",
+                "app\/Models\/AuthSetting.php",
+                "app\/Models\/Campaign.php",
+                "app\/Models\/CampaignCountry.php",
+                "app\/Models\/CmsPage.php",
+                "app\/Models\/ErrorLog.php",
+                "app\/Models\/User.php",
+                "app\/helpers.php",
+                "app\/Http\/Controllers\/Brand\/BrandPanelController.php",
+                "app\/Http\/Controllers\/Admin\/AdminPanelController.php",
+                "app\/Http\/Controllers\/Admin\/CmsController.php",
+                "app\/Http\/Controllers\/Admin\/ErrorLogController.php",
+                "app\/Http\/Controllers\/Admin\/PluginModulesController.php",
+                "app\/Http\/Controllers\/Clipper\/ClipperPanelController.php",
+                "app\/Http\/Controllers\/Auth\/AuthController.php",
+                "app\/Http\/Controllers\/WebController.php",
+                "app\/Http\/Controllers\/FrontCmsController.php",
+                "app\/Services\/StripeCheckoutService.php",
+                "routes\/web.php",
+                "index.php",
+                "public\/index.php",
+                "clear_cache.php",
+                "clear-cache.php",
+                "public\/clear_cache.php",
+                "js\/gezux-animations.js",
+                "public\/js\/gezux-animations.js",
+                "resources\/views\/layouts\/app.blade.php",
+                "resources\/views\/pages\/home.blade.php",
+                "resources\/views\/pages\/campaign-detail.blade.php",
+                "resources\/views\/pages\/auth\/login.blade.php",
+                "resources\/views\/pages\/auth\/register.blade.php",
+                "resources\/views\/components\/tecveq-seo-meta-box.blade.php",
+                "resources\/views\/components\/tecveq-rich-editor.blade.php",
+                "resources\/views\/components\/navbar.blade.php",
+                "resources\/views\/partials\/notify.blade.php"
+            ],
+            "sql_report": {
+                "sql_files_found": [
+                    "database_update_patch.sql"
+                ],
+                "queries_executed": 10,
+                "queries_passed": 10,
+                "queries_failed": 0,
+                "errors": [],
+                "migration_output": "INFO  Nothing to migrate.",
+                "migration_status": "PASSED"
+            },
+            "manifest_data": {
+                "name": "GEZUX Performance Platform Core Update",
+                "version": "v2.2.0",
+                "type": "patch",
+                "build": "20261025",
+                "description": "Brand Profile Contact Email Database Schema Fix, System Updater MySQL PDO Unbuffered Query Resilience, Self-Healing Schema Handler, and Core Migration Suite.",
+                "changelog": [
+                    "Brand Profile Fix: Added missing contact_email and status columns to brands table",
+                    "Self-Healing Architecture: BrandPanelController dynamically creates contact_email if absent and safely falls back without 500 errors",
+                    "System Update Engine: Resolved MySQL PDO 2014 unbuffered query error with clean statement execution and auto-reconnect",
+                    "Database Patch SQL: Modernized SQL patch script free of unbuffered dynamic prepared statements",
+                    "Audience Country Targeting with per-market CPM rates and CDN high-def flags"
+                ]
+            }
+        },
+        "archive_hash": "056d3293f8de800743bee19e4c149b4baa212e79adc91e225a1eb3c91c286a2f",
+        "signature_verified": true,
+        "uploaded_by": 4,
+        "uploaded_at": "2026-10-27T11:24:59.095151Z",
+        "status": "COMPLETED",
+        "failure_stage": null,
+        "failure_message": null,
+        "completed_at": "2026-10-27T11:24:59.095159Z",
+        "id": 1793100299,
+        "created_at": "2026-10-27 11:24:59"
+    },
+    {
+        "version": "v2.2.0",
+        "release_id": "REL-MJ7AJ3TNOC",
+        "type": "patch",
+        "description": "112 files updated. SQL: 10 passed. Migrations: PASSED.",
+        "manifest": {
+            "files_count": 112,
+            "files_sample": [
+                "bootstrap\/app.php",
+                "app\/Http\/Middleware\/AdminAccessMiddleware.php",
+                "app\/Http\/Middleware\/BrandAccessMiddleware.php",
+                "app\/Http\/Middleware\/ClipperAccessMiddleware.php",
+                "app\/Http\/Middleware\/TecveqSecurityFirewall.php",
+                "app\/Services\/GoogleAuthService.php",
+                "app\/Models\/AuthSetting.php",
+                "app\/Models\/Campaign.php",
+                "app\/Models\/CampaignCountry.php",
+                "app\/Models\/CmsPage.php",
+                "app\/Models\/ErrorLog.php",
+                "app\/Models\/User.php",
+                "app\/helpers.php",
+                "app\/Http\/Controllers\/Brand\/BrandPanelController.php",
+                "app\/Http\/Controllers\/Admin\/AdminPanelController.php",
+                "app\/Http\/Controllers\/Admin\/CmsController.php",
+                "app\/Http\/Controllers\/Admin\/ErrorLogController.php",
+                "app\/Http\/Controllers\/Admin\/PluginModulesController.php",
+                "app\/Http\/Controllers\/Clipper\/ClipperPanelController.php",
+                "app\/Http\/Controllers\/Auth\/AuthController.php",
+                "app\/Http\/Controllers\/WebController.php",
+                "app\/Http\/Controllers\/FrontCmsController.php",
+                "app\/Services\/StripeCheckoutService.php",
+                "routes\/web.php",
+                "index.php",
+                "public\/index.php",
+                "clear_cache.php",
+                "clear-cache.php",
+                "public\/clear_cache.php",
+                "js\/gezux-animations.js",
+                "public\/js\/gezux-animations.js",
+                "resources\/views\/layouts\/app.blade.php",
+                "resources\/views\/pages\/home.blade.php",
+                "resources\/views\/pages\/campaign-detail.blade.php",
+                "resources\/views\/pages\/auth\/login.blade.php",
+                "resources\/views\/pages\/auth\/register.blade.php",
+                "resources\/views\/components\/tecveq-seo-meta-box.blade.php",
+                "resources\/views\/components\/tecveq-rich-editor.blade.php",
+                "resources\/views\/components\/navbar.blade.php",
+                "resources\/views\/partials\/notify.blade.php"
+            ],
+            "sql_report": {
+                "sql_files_found": [
+                    "database_update_patch.sql"
+                ],
+                "queries_executed": 10,
+                "queries_passed": 10,
+                "queries_failed": 0,
+                "errors": [],
+                "migration_output": "INFO  Nothing to migrate.",
+                "migration_status": "PASSED"
+            },
+            "manifest_data": {
+                "name": "GEZUX Performance Platform Core Update",
+                "version": "v2.2.0",
+                "type": "patch",
+                "build": "20261025",
+                "description": "Brand Profile Contact Email Database Schema Fix, System Updater MySQL PDO Unbuffered Query Resilience, Self-Healing Schema Handler, and Core Migration Suite.",
+                "changelog": [
+                    "Brand Profile Fix: Added missing contact_email and status columns to brands table",
+                    "Self-Healing Architecture: BrandPanelController dynamically creates contact_email if absent and safely falls back without 500 errors",
+                    "System Update Engine: Resolved MySQL PDO 2014 unbuffered query error with clean statement execution and auto-reconnect",
+                    "Database Patch SQL: Modernized SQL patch script free of unbuffered dynamic prepared statements",
+                    "Audience Country Targeting with per-market CPM rates and CDN high-def flags"
+                ]
+            }
+        },
+        "archive_hash": "056d3293f8de800743bee19e4c149b4baa212e79adc91e225a1eb3c91c286a2f",
+        "signature_verified": true,
+        "uploaded_by": 4,
+        "uploaded_at": "2026-10-27T10:57:50.613874Z",
+        "status": "COMPLETED",
+        "failure_stage": null,
+        "failure_message": null,
+        "completed_at": "2026-10-27T10:57:50.613880Z",
+        "id": 1793098670,
+        "created_at": "2026-10-27 10:57:50"
+    },
+    {
+        "version": "v2.2.0",
+        "release_id": "REL-DW2NVP6DII",
+        "type": "patch",
+        "description": "112 files updated. SQL: 10 passed. Migrations: PASSED.",
+        "manifest": {
+            "files_count": 112,
+            "files_sample": [
+                "bootstrap\/app.php",
+                "app\/Http\/Middleware\/AdminAccessMiddleware.php",
+                "app\/Http\/Middleware\/BrandAccessMiddleware.php",
+                "app\/Http\/Middleware\/ClipperAccessMiddleware.php",
+                "app\/Http\/Middleware\/TecveqSecurityFirewall.php",
+                "app\/Services\/GoogleAuthService.php",
+                "app\/Models\/AuthSetting.php",
+                "app\/Models\/Campaign.php",
+                "app\/Models\/CampaignCountry.php",
+                "app\/Models\/CmsPage.php",
+                "app\/Models\/ErrorLog.php",
+                "app\/Models\/User.php",
+                "app\/helpers.php",
+                "app\/Http\/Controllers\/Brand\/BrandPanelController.php",
+                "app\/Http\/Controllers\/Admin\/AdminPanelController.php",
+                "app\/Http\/Controllers\/Admin\/CmsController.php",
+                "app\/Http\/Controllers\/Admin\/ErrorLogController.php",
+                "app\/Http\/Controllers\/Admin\/PluginModulesController.php",
+                "app\/Http\/Controllers\/Clipper\/ClipperPanelController.php",
+                "app\/Http\/Controllers\/Auth\/AuthController.php",
+                "app\/Http\/Controllers\/WebController.php",
+                "app\/Http\/Controllers\/FrontCmsController.php",
+                "app\/Services\/StripeCheckoutService.php",
+                "routes\/web.php",
+                "index.php",
+                "public\/index.php",
+                "clear_cache.php",
+                "clear-cache.php",
+                "public\/clear_cache.php",
+                "js\/gezux-animations.js",
+                "public\/js\/gezux-animations.js",
+                "resources\/views\/layouts\/app.blade.php",
+                "resources\/views\/pages\/home.blade.php",
+                "resources\/views\/pages\/campaign-detail.blade.php",
+                "resources\/views\/pages\/auth\/login.blade.php",
+                "resources\/views\/pages\/auth\/register.blade.php",
+                "resources\/views\/components\/tecveq-seo-meta-box.blade.php",
+                "resources\/views\/components\/tecveq-rich-editor.blade.php",
+                "resources\/views\/components\/navbar.blade.php",
+                "resources\/views\/partials\/notify.blade.php"
+            ],
+            "sql_report": {
+                "sql_files_found": [
+                    "database_update_patch.sql"
+                ],
+                "queries_executed": 10,
+                "queries_passed": 10,
+                "queries_failed": 0,
+                "errors": [],
+                "migration_output": "INFO  Nothing to migrate.",
+                "migration_status": "PASSED"
+            },
+            "manifest_data": {
+                "name": "GEZUX Performance Platform Core Update",
+                "version": "v2.2.0",
+                "type": "patch",
+                "build": "20261025",
+                "description": "Brand Profile Contact Email Database Schema Fix, System Updater MySQL PDO Unbuffered Query Resilience, Self-Healing Schema Handler, and Core Migration Suite.",
+                "changelog": [
+                    "Brand Profile Fix: Added missing contact_email and status columns to brands table",
+                    "Self-Healing Architecture: BrandPanelController dynamically creates contact_email if absent and safely falls back without 500 errors",
+                    "System Update Engine: Resolved MySQL PDO 2014 unbuffered query error with clean statement execution and auto-reconnect",
+                    "Database Patch SQL: Modernized SQL patch script free of unbuffered dynamic prepared statements",
+                    "Audience Country Targeting with per-market CPM rates and CDN high-def flags"
+                ]
+            }
+        },
+        "archive_hash": "05d3dadcdfd979aa41fe2338f4aeb4211a66b216d085c3d1bde9d520b08678c1",
+        "signature_verified": true,
+        "uploaded_by": 4,
+        "uploaded_at": "2026-10-27T10:23:05.788931Z",
+        "status": "COMPLETED",
+        "failure_stage": null,
+        "failure_message": null,
+        "completed_at": "2026-10-27T10:23:05.788939Z",
+        "id": 1793096585,
+        "created_at": "2026-10-27 10:23:05"
+    },
+    {
+        "version": "v2.2.0",
+        "release_id": "REL-BGTMQSIKZF",
+        "type": "patch",
+        "description": "110 files updated. SQL: 10 passed. Migrations: PASSED.",
+        "manifest": {
+            "files_count": 110,
+            "files_sample": [
+                "bootstrap\/app.php",
+                "app\/Http\/Middleware\/AdminAccessMiddleware.php",
+                "app\/Http\/Middleware\/BrandAccessMiddleware.php",
+                "app\/Http\/Middleware\/ClipperAccessMiddleware.php",
+                "app\/Http\/Middleware\/TecveqSecurityFirewall.php",
+                "app\/Services\/GoogleAuthService.php",
+                "app\/Models\/AuthSetting.php",
+                "app\/Models\/Campaign.php",
+                "app\/Models\/CampaignCountry.php",
+                "app\/Models\/CmsPage.php",
+                "app\/Models\/ErrorLog.php",
+                "app\/Models\/User.php",
+                "app\/helpers.php",
+                "app\/Http\/Controllers\/Brand\/BrandPanelController.php",
+                "app\/Http\/Controllers\/Admin\/AdminPanelController.php",
+                "app\/Http\/Controllers\/Admin\/CmsController.php",
+                "app\/Http\/Controllers\/Admin\/ErrorLogController.php",
+                "app\/Http\/Controllers\/Admin\/PluginModulesController.php",
+                "app\/Http\/Controllers\/Clipper\/ClipperPanelController.php",
+                "app\/Http\/Controllers\/Auth\/AuthController.php",
+                "app\/Http\/Controllers\/WebController.php",
+                "app\/Http\/Controllers\/FrontCmsController.php",
+                "app\/Services\/StripeCheckoutService.php",
+                "routes\/web.php",
+                "index.php",
+                "public\/index.php",
+                "clear_cache.php",
+                "clear-cache.php",
+                "public\/clear_cache.php",
+                "js\/gezux-animations.js",
+                "public\/js\/gezux-animations.js",
+                "resources\/views\/layouts\/app.blade.php",
+                "resources\/views\/pages\/home.blade.php",
+                "resources\/views\/pages\/campaign-detail.blade.php",
+                "resources\/views\/pages\/auth\/login.blade.php",
+                "resources\/views\/pages\/auth\/register.blade.php",
+                "resources\/views\/components\/tecveq-seo-meta-box.blade.php",
+                "resources\/views\/components\/tecveq-rich-editor.blade.php",
+                "resources\/views\/components\/navbar.blade.php",
+                "resources\/views\/partials\/notify.blade.php"
+            ],
+            "sql_report": {
+                "sql_files_found": [
+                    "database_update_patch.sql"
+                ],
+                "queries_executed": 10,
+                "queries_passed": 10,
+                "queries_failed": 0,
+                "errors": [],
+                "migration_output": "INFO  Nothing to migrate.",
+                "migration_status": "PASSED"
+            },
+            "manifest_data": {
+                "name": "GEZUX Performance Platform Core Update",
+                "version": "v2.2.0",
+                "type": "patch",
+                "build": "20261025",
+                "description": "Brand Profile Contact Email Database Schema Fix, System Updater MySQL PDO Unbuffered Query Resilience, Self-Healing Schema Handler, and Core Migration Suite.",
+                "changelog": [
+                    "Brand Profile Fix: Added missing contact_email and status columns to brands table",
+                    "Self-Healing Architecture: BrandPanelController dynamically creates contact_email if absent and safely falls back without 500 errors",
+                    "System Update Engine: Resolved MySQL PDO 2014 unbuffered query error with clean statement execution and auto-reconnect",
+                    "Database Patch SQL: Modernized SQL patch script free of unbuffered dynamic prepared statements",
+                    "Audience Country Targeting with per-market CPM rates and CDN high-def flags"
+                ]
+            }
+        },
+        "archive_hash": "db17b71ca39b0b76fed310b4d862ad8dd5137fcfbb5c9deeac65dff735ea8c34",
+        "signature_verified": true,
+        "uploaded_by": 4,
+        "uploaded_at": "2026-10-27T02:01:09.293705Z",
+        "status": "COMPLETED",
+        "failure_stage": null,
+        "failure_message": null,
+        "completed_at": "2026-10-27T02:01:09.293713Z",
+        "id": 1793066469,
+        "created_at": "2026-10-27 02:01:09"
+    },
+    {
+        "version": "v2.2.0",
+        "release_id": "REL-XCZ8MEMLTX",
+        "type": "patch",
+        "description": "96 files updated. SQL: 10 passed. Migrations: PASSED.",
+        "manifest": {
+            "files_count": 96,
+            "files_sample": [
+                "bootstrap\/app.php",
+                "app\/Http\/Middleware\/AdminAccessMiddleware.php",
+                "app\/Http\/Middleware\/BrandAccessMiddleware.php",
+                "app\/Http\/Middleware\/ClipperAccessMiddleware.php",
+                "app\/Http\/Middleware\/TecveqSecurityFirewall.php",
+                "app\/Services\/GoogleAuthService.php",
+                "app\/Models\/AuthSetting.php",
+                "app\/Models\/Brand.php",
+                "app\/Models\/Campaign.php",
+                "app\/Models\/CampaignCountry.php",
+                "app\/Models\/CmsPage.php",
+                "app\/Models\/ErrorLog.php",
+                "app\/Models\/User.php",
+                "app\/helpers.php",
+                "app\/Http\/Controllers\/Brand\/BrandPanelController.php",
+                "app\/Http\/Controllers\/Admin\/AdminPanelController.php",
+                "app\/Http\/Controllers\/Admin\/CmsController.php",
+                "app\/Http\/Controllers\/Admin\/ErrorLogController.php",
+                "app\/Http\/Controllers\/Admin\/PluginModulesController.php",
+                "app\/Http\/Controllers\/Clipper\/ClipperPanelController.php",
+                "app\/Http\/Controllers\/Auth\/AuthController.php",
+                "app\/Http\/Controllers\/WebController.php",
+                "app\/Http\/Controllers\/FrontCmsController.php",
+                "app\/Services\/StripeCheckoutService.php",
+                "routes\/web.php",
+                "index.php",
+                "public\/index.php",
+                "clear_cache.php",
+                "clear-cache.php",
+                "public\/clear_cache.php",
+                "js\/gezux-animations.js",
+                "public\/js\/gezux-animations.js",
+                "resources\/views\/layouts\/app.blade.php",
+                "resources\/views\/pages\/home.blade.php",
+                "resources\/views\/pages\/campaign-detail.blade.php",
+                "resources\/views\/pages\/auth\/login.blade.php",
+                "resources\/views\/pages\/auth\/register.blade.php",
+                "resources\/views\/components\/tecveq-seo-meta-box.blade.php",
+                "resources\/views\/components\/tecveq-rich-editor.blade.php",
+                "resources\/views\/components\/navbar.blade.php"
+            ],
+            "sql_report": {
+                "sql_files_found": [
+                    "database_update_patch.sql"
+                ],
+                "queries_executed": 10,
+                "queries_passed": 10,
+                "queries_failed": 0,
+                "errors": [],
+                "migration_output": "INFO  Running migrations.  \n\n  2026_10_24_000001_add_contact_email_to_brands_table ............ 4.81ms DONE",
+                "migration_status": "PASSED"
+            },
+            "manifest_data": {
+                "name": "GEZUX Performance Platform Core Update",
+                "version": "v2.2.0",
+                "type": "patch",
+                "build": "20261025",
+                "description": "Brand Profile Contact Email Database Schema Fix, System Updater MySQL PDO Unbuffered Query Resilience, Self-Healing Schema Handler, and Core Migration Suite.",
+                "changelog": [
+                    "Brand Profile Fix: Added missing contact_email and status columns to brands table",
+                    "Self-Healing Architecture: BrandPanelController dynamically creates contact_email if absent and safely falls back without 500 errors",
+                    "System Update Engine: Resolved MySQL PDO 2014 unbuffered query error with clean statement execution and auto-reconnect",
+                    "Database Patch SQL: Modernized SQL patch script free of unbuffered dynamic prepared statements",
+                    "Audience Country Targeting with per-market CPM rates and CDN high-def flags"
+                ]
+            }
+        },
+        "archive_hash": "558dd6efb34909715e8c33decd3bdbb44ee7bf107a2bd4cba7e6fd778e3b82ad",
+        "signature_verified": true,
+        "uploaded_by": 4,
+        "uploaded_at": "2026-10-25T02:16:45.437655Z",
+        "status": "COMPLETED",
+        "failure_stage": null,
+        "failure_message": null,
+        "completed_at": "2026-10-25T02:16:45.437661Z",
+        "id": 1792894605,
+        "created_at": "2026-10-25 02:16:45"
+    },
+    {
+        "version": "v2.1.0",
+        "release_id": "REL-VCAGSZOJE0",
+        "type": "patch",
+        "description": "97 files updated. SQL: 2 passed, 36 failed. Migrations: FAILED.",
+        "manifest": {
+            "files_count": 97,
+            "files_sample": [
+                "bootstrap\/app.php",
+                "app\/Http\/Middleware\/AdminAccessMiddleware.php",
+                "app\/Http\/Middleware\/BrandAccessMiddleware.php",
+                "app\/Http\/Middleware\/ClipperAccessMiddleware.php",
+                "app\/Http\/Middleware\/TecveqSecurityFirewall.php",
+                "app\/Services\/GoogleAuthService.php",
+                "app\/Models\/AuthSetting.php",
+                "app\/Models\/Campaign.php",
+                "app\/Models\/CampaignCountry.php",
+                "app\/Models\/CmsPage.php",
+                "app\/Models\/ErrorLog.php",
+                "app\/Models\/User.php",
+                "app\/helpers.php",
+                "app\/Http\/Controllers\/Brand\/BrandPanelController.php",
+                "app\/Http\/Controllers\/Admin\/AdminPanelController.php",
+                "app\/Http\/Controllers\/Admin\/CmsController.php",
+                "app\/Http\/Controllers\/Admin\/ErrorLogController.php",
+                "app\/Http\/Controllers\/Admin\/PluginModulesController.php",
+                "app\/Http\/Controllers\/Clipper\/ClipperPanelController.php",
+                "app\/Http\/Controllers\/Auth\/AuthController.php",
+                "app\/Http\/Controllers\/WebController.php",
+                "app\/Http\/Controllers\/FrontCmsController.php",
+                "app\/Services\/StripeCheckoutService.php",
+                "routes\/web.php",
+                "index.php",
+                "public\/index.php",
+                "clear_cache.php",
+                "clear-cache.php",
+                "public\/clear_cache.php",
+                "js\/gezux-animations.js",
+                "public\/js\/gezux-animations.js",
+                "resources\/views\/layouts\/app.blade.php",
+                "resources\/views\/pages\/home.blade.php",
+                "resources\/views\/pages\/campaign-detail.blade.php",
+                "resources\/views\/pages\/auth\/login.blade.php",
+                "resources\/views\/pages\/auth\/register.blade.php",
+                "resources\/views\/components\/tecveq-seo-meta-box.blade.php",
+                "resources\/views\/components\/tecveq-rich-editor.blade.php",
+                "resources\/views\/components\/navbar.blade.php",
+                "resources\/views\/partials\/notify.blade.php"
+            ],
+            "sql_report": {
+                "sql_files_found": [
+                    "database_update_patch.sql"
+                ],
+                "queries_executed": 38,
+                "queries_passed": 2,
+                "queries_failed": 36,
+                "errors": [
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "DEALLOCATE PREPARE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: DEALLOCATE PREPARE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "PREPARE alterIfNotExists FROM @preparedStatement",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: PREPARE alterIfNotExists FROM @preparedStatement;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "EXECUTE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: EXECUTE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "DEALLOCATE PREPARE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: DEALLOCATE PREPARE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "PREPARE alterIfNotExists FROM @preparedStatement",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: PREPARE alterIfNotExists FROM @preparedStatement;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "EXECUTE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: EXECUTE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "DEALLOCATE PREPARE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: DEALLOCATE PREPARE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "PREPARE alterIfNotExists FROM @preparedStatement",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: PREPARE alterIfNotExists FROM @preparedStatement;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "EXECUTE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: EXECUTE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "DEALLOCATE PREPARE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: DEALLOCATE PREPARE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "PREPARE alterIfNotExists FROM @preparedStatement",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: PREPARE alterIfNotExists FROM @preparedStatement;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "EXECUTE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: EXECUTE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "DEALLOCATE PREPARE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: DEALLOCATE PREPARE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "PREPARE alterIfNotExists FROM @preparedStatement",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: PREPARE alterIfNotExists FROM @preparedStatement;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "EXECUTE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: EXECUTE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "DEALLOCATE PREPARE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: DEALLOCATE PREPARE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "PREPARE alterIfNotExists FROM @preparedStatement",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: PREPARE alterIfNotExists FROM @preparedStatement;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "EXECUTE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: EXECUTE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "DEALLOCATE PREPARE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: DEALLOCATE PREPARE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "PREPARE alterIfNotExists FROM @preparedStatement",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: PREPARE alterIfNotExists FROM @preparedStatement;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "EXECUTE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: EXECUTE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "DEALLOCATE PREPARE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: DEALLOCATE PREPARE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "PREPARE alterIfNotExists FROM @preparedStatement",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: PREPARE alterIfNotExists FROM @preparedStatement;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "EXECUTE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: EXECUTE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "DEALLOCATE PREPARE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: DEALLOCATE PREPARE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "PREPARE alterIfNotExists FROM @preparedStatement",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: PREPARE alterIfNotExists FROM @preparedStatement;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "EXECUTE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: EXECUTE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "DEALLOCATE PREPARE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: DEALLOCATE PREPARE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "PREPARE alterIfNotExists FROM @preparedStatement",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: PREPARE alterIfNotExists FROM @preparedStatement;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "EXECUTE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: EXECUTE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "DEALLOCATE PREPARE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: DEALLOCATE PREPARE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "PREPARE alterIfNotExists FROM @preparedStatement",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: PREPARE alterIfNotExists FROM @preparedStatement;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "EXECUTE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: EXECUTE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "DEALLOCATE PREPARE alterIfNotExists",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: DEALLOCATE PREPARE alterIfNotExists;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "CREATE TABLE IF NOT EXISTS `system_update_steps` (\n  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,\n  `release_id` va...",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: CREATE TABLE IF NOT EXISTS `system_update_steps` (\n  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,\n  `release_id` varchar(255) NOT NULL,\n  `step` varchar(255) NOT NULL,\n  `status` varchar(255) NOT NULL DEFAULT 'SUCCESS',\n  `started_at` timestamp NULL DEFAULT NULL,\n  `completed_at` timestamp NULL DEFAULT NULL,\n  `message` text DEFAULT NULL,\n  `safe_error` text DEFAULT NULL,\n  `created_at` timestamp NULL DEFAULT NULL,\n  `updated_at` timestamp NULL DEFAULT NULL,\n  PRIMARY KEY (`id`),\n  KEY `system_update_steps_release_id_index` (`release_id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;)"
+                    },
+                    {
+                        "file": "database_update_patch.sql",
+                        "query": "COMMIT",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: COMMIT;)"
+                    },
+                    {
+                        "file": "artisan:migrate",
+                        "query": "php artisan migrate --force",
+                        "error": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: select exists (select 1 from information_schema.tables where table_schema = schema() and table_name = 'migrations' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED')) as `exists`)"
+                    }
+                ],
+                "migration_output": "",
+                "migration_status": "FAILED"
+            },
+            "manifest_data": {
+                "name": "GEZUX Performance Platform Core Update",
+                "version": "v2.1.0",
+                "type": "patch",
+                "build": "20261024",
+                "description": "Geo-CPM Audience Targeting, Per-Country CPM Rates with Real Visual Flags, Unified Campaign Economics, and Database SQL Automated Migration Suite.",
+                "changelog": [
+                    "Audience Country Targeting unified with Campaign Economics (No duplicate fields)",
+                    "Worldwide, Single Country, and Multi-Country targeting modes with per-market CPM rates",
+                    "High-definition CDN flags integration (Fixed Windows OS emoji rendering issue)",
+                    "System Update Engine: Automated execution of database SQL patch files with real-time error capture",
+                    "System Update History: Telemetry for updated file counts, SQL query stats, and detailed failure diagnostic modal"
+                ]
+            }
+        },
+        "archive_hash": "779c2bc91b77400b8dcd67a5dd174cf2b0d0258743b28edf0429f249ce202753",
+        "signature_verified": true,
+        "uploaded_by": 4,
+        "uploaded_at": "2026-10-24T06:40:58.092151Z",
+        "status": "WARNING",
+        "failure_stage": "SQL_EXECUTION",
+        "failure_message": "SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. (Connection: mysql, Host: localhost, Port: 3306, Database: u587253009_gezux378uhwn22, SQL: DEALLOCATE PREPARE alterIfNotExists;)",
+        "completed_at": "2026-10-24T06:40:58.092156Z",
+        "id": 1792824058,
+        "created_at": "2026-10-24 06:40:58"
+    }
+]

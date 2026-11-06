@@ -1,0 +1,617 @@
+/* ==========================================================================
+   GEZUX DASHBOARDS DESIGN SYSTEM — ADMIN / BRAND / CLIPPER
+   Unified Dark & Light Semantic Styling for Filament 5
+   ========================================================================== */
+
+:root {
+  --gezux-canvas: #F1F5F9;
+  --gezux-surface: #FFFFFF;
+  --gezux-card: #FFFFFF;
+  --gezux-elevated: #F8FAFC;
+  --gezux-hover: #F1F5F9;
+  --gezux-border: #CBD5E1;
+  --gezux-border-strong: #94A3B8;
+  --gezux-border-accent: rgba(124, 58, 237, 0.6);
+  
+  --gezux-text-primary: #0F172A;
+  --gezux-text-secondary: #334155;
+  --gezux-text-muted: #64748B;
+  --gezux-text-subtle: #64748B;
+
+  --gezux-primary: #7C3AED;
+  --gezux-primary-hover: #6D28D9;
+  --gezux-primary-light: rgba(124, 58, 237, 0.08);
+}
+
+.light, html.light, :root:not(.dark) {
+  --gezux-canvas: #F1F5F9;
+  --gezux-surface: #FFFFFF;
+  --gezux-card: #FFFFFF;
+  --gezux-elevated: #F8FAFC;
+  --gezux-hover: #E2E8F0;
+  --gezux-border: #CBD5E1;
+  --gezux-border-strong: #94A3B8;
+  --gezux-border-accent: rgba(124, 58, 237, 0.6);
+
+  --gezux-text-primary: #0F172A;
+  --gezux-text-secondary: #334155;
+  --gezux-text-muted: #64748B;
+  --gezux-text-subtle: #64748B;
+
+  --gezux-primary: #7C3AED;
+  --gezux-primary-hover: #6D28D9;
+  --gezux-primary-light: rgba(124, 58, 237, 0.08);
+}
+
+/* ==========================================================================
+   GLOBAL APP SHELL & NAVIGATION
+   ========================================================================== */
+
+body.fi-body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.011em;
+  background-color: var(--gezux-canvas) !important;
+  color: var(--gezux-text-primary) !important;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Sidebar styling */
+.fi-sidebar {
+  background-color: var(--gezux-surface) !important;
+  border-right: 1px solid var(--gezux-border) !important;
+}
+
+.fi-sidebar-header {
+  border-bottom: 1px solid var(--gezux-border) !important;
+}
+
+.fi-sidebar-nav-groups .fi-sidebar-group-label {
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: var(--gezux-text-subtle) !important;
+  padding: 0.5rem 0.75rem 0.25rem !important;
+}
+
+.fi-sidebar-item-button {
+  border-radius: 0.65rem !important;
+  transition: all 0.15s ease-in-out !important;
+  font-weight: 500 !important;
+  font-size: 0.825rem !important;
+}
+
+.fi-sidebar-item-button:hover {
+  background-color: var(--gezux-hover) !important;
+}
+
+.fi-sidebar-item.fi-active .fi-sidebar-item-button {
+  background-color: var(--gezux-primary-light) !important;
+  color: var(--gezux-primary) !important;
+  font-weight: 600 !important;
+}
+
+/* Topbar header */
+.fi-topbar {
+  background-color: var(--gezux-surface) !important;
+  border-bottom: 1px solid var(--gezux-border) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+/* ==========================================================================
+   CARDS, WIDGETS & SECTIONS
+   ========================================================================== */
+
+.fi-section, .fi-wi-stats-overview-stat, .fi-ta-ctn {
+  background-color: var(--gezux-card) !important;
+  border: 1px solid var(--gezux-border) !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03), 0 1px 2px -1px rgba(0, 0, 0, 0.03) !important;
+}
+
+.fi-section-header {
+  border-bottom: 1px solid var(--gezux-border) !important;
+  padding-bottom: 0.875rem !important;
+}
+
+/* ==========================================================================
+   TABLES & LISTINGS
+   ========================================================================== */
+
+.fi-ta-table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+}
+
+.fi-ta-header-cell {
+  background-color: var(--gezux-elevated) !important;
+  border-bottom: 1px solid var(--gezux-border) !important;
+  font-size: 0.725rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  color: var(--gezux-text-muted) !important;
+}
+
+.fi-ta-row {
+  transition: background-color 0.15s ease !important;
+}
+
+.fi-ta-row:hover {
+  background-color: var(--gezux-hover) !important;
+}
+
+.fi-ta-cell {
+  border-bottom: 1px solid var(--gezux-border) !important;
+}
+
+/* ==========================================================================
+   FORMS, INPUTS & SELECTS
+   ========================================================================== */
+
+.fi-input, .fi-select-input, textarea.fi-input,
+.fi-fo-text-input input, .fi-fo-select select,
+input[type="text"], input[type="url"], input[type="number"], 
+input[type="email"], input[type="password"], select, textarea {
+  background-color: #FFFFFF !important;
+  border: 1.5px solid #CBD5E1 !important;
+  border-radius: 0.75rem !important;
+  color: #0F172A !important;
+  font-size: 0.875rem !important;
+  transition: all 0.15s ease-in-out !important;
+}
+
+.fi-input:hover, .fi-select-input:hover, textarea.fi-input:hover,
+input[type="text"]:hover, input[type="url"]:hover, input[type="number"]:hover,
+input[type="email"]:hover, input[type="password"]:hover, select:hover, textarea:hover {
+  border-color: #94A3B8 !important;
+}
+
+.fi-input:focus, .fi-select-input:focus, textarea.fi-input:focus,
+input[type="text"]:focus, input[type="url"]:focus, input[type="number"]:focus,
+input[type="email"]:focus, input[type="password"]:focus, select:focus, textarea:focus {
+  border-color: #7C3AED !important;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2) !important;
+  outline: none !important;
+  background-color: #FFFFFF !important;
+}
+
+.fi-fo-field-wrp-label, label {
+  font-weight: 700 !important;
+  font-size: 0.815rem !important;
+  color: #1E293B !important;
+}
+
+.fi-fo-field-wrp-helper-text {
+  font-size: 0.75rem !important;
+  color: #64748B !important;
+}
+
+/* ==========================================================================
+   BUTTONS & BADGES
+   ========================================================================== */
+
+.fi-btn-primary {
+  background-color: var(--gezux-primary) !important;
+  color: #FFFFFF !important;
+  border-radius: 0.65rem !important;
+  font-weight: 600 !important;
+  transition: all 0.15s ease-in-out !important;
+  box-shadow: 0 2px 4px rgba(124, 58, 237, 0.2) !important;
+}
+
+.fi-btn-primary:hover {
+  background-color: var(--gezux-primary-hover) !important;
+}
+
+.fi-badge {
+  border-radius: 9999px !important;
+  font-weight: 600 !important;
+  font-size: 0.725rem !important;
+  letter-spacing: 0.02em !important;
+}
+
+/* ==========================================================================
+   MODALS & DRAWERS
+   ========================================================================== */
+
+.fi-modal-window {
+  background-color: var(--gezux-surface) !important;
+  border: 1px solid var(--gezux-border-strong) !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+
+.fi-modal-header {
+  border-bottom: 1px solid var(--gezux-border) !important;
+}
+
+.fi-modal-footer {
+  border-top: 1px solid var(--gezux-border) !important;
+  background-color: var(--gezux-elevated) !important;
+}
+
+/* ==========================================================================
+   CUSTOM BLADE PAGES THEME ADAPTATION (ADMIN / BRAND / CLIPPER)
+   Automatically adapt custom cards, headers, toolbars & stats in Light Mode
+   while preserving Obsidian/Graphite in Dark Mode
+   ========================================================================== */
+
+html:not(.dark) .bg-\[\#121218\],
+html:not(.dark) .bg-\[\#0b0b10\],
+html:not(.dark) .bg-\[\#18181F\],
+html:not(.dark) .bg-\[\#161822\],
+html:not(.dark) .bg-\[\#161622\],
+html:not(.dark) .bg-\[\#070708\],
+html.light .bg-\[\#121218\],
+html.light .bg-\[\#0b0b10\],
+html.light .bg-\[\#18181F\],
+html.light .bg-\[\#161822\],
+html.light .bg-\[\#161622\],
+html.light .bg-\[\#070708\] {
+  background: var(--gezux-card) !important;
+  border-color: var(--gezux-border) !important;
+  color: var(--gezux-text-primary) !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04) !important;
+}
+
+html:not(.dark) .border-white\/10,
+html:not(.dark) .border-white\/5,
+html:not(.dark) .border-white\/20,
+html.light .border-white\/10,
+html.light .border-white\/5,
+html.light .border-white\/20 {
+  border-color: var(--gezux-border) !important;
+}
+
+html:not(.dark) .bg-white\/5,
+html:not(.dark) .bg-white\/10,
+html.light .bg-white\/5,
+html.light .bg-white\/10 {
+  background-color: var(--gezux-hover) !important;
+}
+
+html:not(.dark) .bg-\[\#121218\] h1,
+html:not(.dark) .bg-\[\#121218\] h2,
+html:not(.dark) .bg-\[\#121218\] h3,
+html:not(.dark) .bg-\[\#121218\] .text-white,
+html:not(.dark) .bg-\[\#0b0b10\] .text-white,
+html:not(.dark) .bg-\[\#18181F\] .text-white,
+html.light .bg-\[\#121218\] h1,
+html.light .bg-\[\#121218\] h2,
+html.light .bg-\[\#121218\] h3,
+html.light .bg-\[\#121218\] .text-white,
+html.light .bg-\[\#0b0b10\] .text-white,
+html.light .bg-\[\#18181F\] .text-white {
+  color: var(--gezux-text-primary) !important;
+}
+
+html:not(.dark) .bg-\[\#121218\] .text-gray-400,
+html:not(.dark) .bg-\[\#0b0b10\] .text-gray-400,
+html:not(.dark) .bg-\[\#18181F\] .text-gray-400,
+html.light .bg-\[\#121218\] .text-gray-400,
+html.light .bg-\[\#0b0b10\] .text-gray-400,
+html.light .bg-\[\#18181F\] .text-gray-400 {
+  color: var(--gezux-text-secondary) !important;
+}
+
+html:not(.dark) .bg-\[\#121218\] .text-gray-500,
+html:not(.dark) .bg-\[\#0b0b10\] .text-gray-500,
+html:not(.dark) .bg-\[\#18181F\] .text-gray-500,
+html.light .bg-\[\#121218\] .text-gray-500,
+html.light .bg-\[\#0b0b10\] .text-gray-500,
+html.light .bg-\[\#18181F\] .text-gray-500 {
+  color: var(--gezux-text-muted) !important;
+}
+
+html:not(.dark) input.bg-\[\#0b0b10\],
+html:not(.dark) select.bg-\[\#0b0b10\],
+html:not(.dark) textarea.bg-\[\#0b0b10\],
+html.light input.bg-\[\#0b0b10\],
+html.light select.bg-\[\#0b0b10\],
+html.light textarea.bg-\[\#0b0b10\] {
+  background-color: #FFFFFF !important;
+  color: var(--gezux-text-primary) !important;
+  border-color: var(--gezux-border-strong) !important;
+}
+
+html:not(.dark) .divide-white\/5 > * + *,
+html:not(.dark) .divide-white\/10 > * + *,
+html.light .divide-white\/5 > * + *,
+html.light .divide-white\/10 > * + * {
+  border-color: var(--gezux-border) !important;
+}
+
+/* ==========================================================================
+   BULLETPROOF COMPONENT DESIGN SYSTEM FOR CUSTOM DASHBOARD BLADES
+   Independent of Tailwind utility purging in Filament
+   ========================================================================== */
+
+.gezux-container {
+  width: 100% !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+}
+
+.gezux-banner {
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  border-radius: 16px !important;
+  padding: 24px 28px !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.gezux-card {
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  border-radius: 16px !important;
+  padding: 24px !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.gezux-card:hover {
+  border-color: #94A3B8 !important;
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.06) !important;
+}
+
+.gezux-card-active {
+  border: 1.5px solid #7C3AED !important;
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.15), 0 4px 6px -1px rgba(15, 23, 42, 0.08) !important;
+}
+
+.gezux-grid-4 {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+  gap: 20px !important;
+}
+
+.gezux-grid-2 {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+  gap: 20px !important;
+}
+
+.gezux-input {
+  width: 100% !important;
+  background-color: #FFFFFF !important;
+  border: 1.5px solid #CBD5E1 !important;
+  border-radius: 12px !important;
+  padding: 12px 16px !important;
+  font-size: 14px !important;
+  color: #0F172A !important;
+  outline: none !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04) !important;
+  transition: all 0.15s ease-in-out !important;
+}
+
+.gezux-input:hover {
+  border-color: #94A3B8 !important;
+}
+
+.gezux-input:focus {
+  border-color: #7C3AED !important;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.18) !important;
+  background-color: #FFFFFF !important;
+}
+
+.gezux-btn-primary {
+  background-color: #7C3AED !important;
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  padding: 12px 24px !important;
+  border-radius: 12px !important;
+  border: none !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  box-shadow: 0 2px 4px rgba(124, 58, 237, 0.25) !important;
+  transition: all 0.15s ease-in-out !important;
+  text-decoration: none !important;
+}
+
+.gezux-btn-primary:hover {
+  background-color: #6D28D9 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.35) !important;
+}
+
+.gezux-btn-secondary {
+  background-color: #F1F5F9 !important;
+  color: #334155 !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  padding: 10px 18px !important;
+  border-radius: 12px !important;
+  border: 1px solid #CBD5E1 !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  transition: all 0.15s ease-in-out !important;
+  text-decoration: none !important;
+}
+
+.gezux-btn-secondary:hover {
+  background-color: #E2E8F0 !important;
+  color: #0F172A !important;
+  border-color: #94A3B8 !important;
+}
+
+.gezux-btn-danger {
+  background-color: #FFF1F2 !important;
+  color: #BE123C !important;
+  border: 1px solid #FECDD3 !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  padding: 8px 16px !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  transition: all 0.15s ease-in-out !important;
+  text-decoration: none !important;
+}
+
+.gezux-btn-danger:hover {
+  background-color: #FFE4E6 !important;
+  color: #9F1239 !important;
+  border-color: #FDA4AF !important;
+}
+
+.gezux-badge-active {
+  background-color: #ECFDF5 !important;
+  color: #047857 !important;
+  border: 1px solid #A7F3D0 !important;
+  padding: 4px 10px !important;
+  border-radius: 9999px !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.gezux-badge-unlinked {
+  background-color: #F1F5F9 !important;
+  color: #64748B !important;
+  border: 1px solid #CBD5E1 !important;
+  padding: 4px 10px !important;
+  border-radius: 9999px !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.gezux-platform-card {
+  padding: 14px 16px !important;
+  border-radius: 14px !important;
+  border: 1.5px solid #CBD5E1 !important;
+  background-color: #FFFFFF !important;
+  color: #1E293B !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease-in-out !important;
+}
+
+.gezux-platform-card:hover {
+  border-color: #94A3B8 !important;
+  background-color: #F8FAFC !important;
+}
+
+.gezux-platform-card.active {
+  border-color: #7C3AED !important;
+  background-color: rgba(124, 58, 237, 0.08) !important;
+  color: #5B21B6 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.2) !important;
+}
+
+.gezux-platform-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+}
+
+@media (max-width: 900px) {
+  .gezux-platform-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+.gezux-metrics-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+}
+
+@media (max-width: 768px) {
+  .gezux-metrics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+.gezux-methods-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+}
+
+@media (max-width: 640px) {
+  .gezux-methods-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.gezux-layout-cols {
+  display: grid !important;
+  grid-template-columns: 2fr 1fr !important;
+  gap: 24px !important;
+  align-items: start !important;
+}
+
+@media (max-width: 1024px) {
+  .gezux-layout-cols {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.gezux-impersonation-bar {
+  width: 100% !important;
+  background: linear-gradient(90deg, #991B1B 0%, #BE123C 50%, #9A3412 100%) !important;
+  color: #FFFFFF !important;
+  padding: 10px 20px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 99999 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  font-family: inherit !important;
+}
+
+.gezux-impersonation-btn {
+  background-color: #FFFFFF !important;
+  color: #9F1239 !important;
+  font-weight: 800 !important;
+  font-size: 12px !important;
+  padding: 7px 16px !important;
+  border-radius: 8px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  text-decoration: none !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+  transition: all 0.15s ease-in-out !important;
+}
+
+.gezux-impersonation-btn:hover {
+  background-color: #FFF1F2 !important;
+  color: #881337 !important;
+  transform: translateY(-1px) !important;
+}
+
+
+

@@ -1,0 +1,25 @@
+{
+  "name": "GEZUX Admin Control Center",
+  "short_name": "GEZUX Admin",
+  "description": "Production operational control center for GEZUX marketplace administration.",
+  "start_url": "/admin",
+  "scope": "/admin/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#070708",
+  "theme_color": "#070708",
+  "icons": [
+    {
+      "src": "/images/gezux-favicon.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/gezux-favicon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

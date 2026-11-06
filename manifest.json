@@ -1,0 +1,14 @@
+{
+    "name": "GEZUX Performance Platform Core Update",
+    "version": "v2.2.0",
+    "type": "patch",
+    "build": "20261025",
+    "description": "Brand Profile Contact Email Database Schema Fix, System Updater MySQL PDO Unbuffered Query Resilience, Self-Healing Schema Handler, and Core Migration Suite.",
+    "changelog": [
+        "Brand Profile Fix: Added missing contact_email and status columns to brands table",
+        "Self-Healing Architecture: BrandPanelController dynamically creates contact_email if absent and safely falls back without 500 errors",
+        "System Update Engine: Resolved MySQL PDO 2014 unbuffered query error with clean statement execution and auto-reconnect",
+        "Database Patch SQL: Modernized SQL patch script free of unbuffered dynamic prepared statements",
+        "Audience Country Targeting with per-market CPM rates and CDN high-def flags"
+    ]
+}

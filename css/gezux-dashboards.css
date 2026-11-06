@@ -1,0 +1,312 @@
+/* ==========================================================================
+   GEZUX DASHBOARDS DESIGN SYSTEM — ADMIN / BRAND / CLIPPER
+   Unified Dark & Light Semantic Styling for Filament 5
+   ========================================================================== */
+
+:root {
+  --gezux-canvas: #070708;
+  --gezux-surface: #0B0B10;
+  --gezux-card: #121218;
+  --gezux-elevated: #18181F;
+  --gezux-hover: #22222C;
+  --gezux-border: rgba(255, 255, 255, 0.08);
+  --gezux-border-strong: rgba(255, 255, 255, 0.16);
+  --gezux-border-accent: rgba(124, 58, 237, 0.4);
+  
+  --gezux-text-primary: #F7F7F5;
+  --gezux-text-secondary: #D4D4D8;
+  --gezux-text-muted: #A1A1AA;
+  --gezux-text-subtle: #71717A;
+
+  --gezux-primary: #7C3AED;
+  --gezux-primary-hover: #8B5CF6;
+  --gezux-primary-light: rgba(124, 58, 237, 0.15);
+}
+
+.light, html.light, :root:not(.dark) {
+  --gezux-canvas: #FAFAFB;
+  --gezux-surface: #FFFFFF;
+  --gezux-card: #FFFFFF;
+  --gezux-elevated: #F8FAFC;
+  --gezux-hover: #F1F5F9;
+  --gezux-border: rgba(0, 0, 0, 0.08);
+  --gezux-border-strong: rgba(0, 0, 0, 0.14);
+  --gezux-border-accent: rgba(124, 58, 237, 0.5);
+
+  --gezux-text-primary: #09090B;
+  --gezux-text-secondary: #27272A;
+  --gezux-text-muted: #52525B;
+  --gezux-text-subtle: #71717A;
+
+  --gezux-primary: #7C3AED;
+  --gezux-primary-hover: #6D28D9;
+  --gezux-primary-light: rgba(124, 58, 237, 0.08);
+}
+
+/* ==========================================================================
+   GLOBAL APP SHELL & NAVIGATION
+   ========================================================================== */
+
+body.fi-body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.011em;
+  background-color: var(--gezux-canvas) !important;
+  color: var(--gezux-text-primary) !important;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Sidebar styling */
+.fi-sidebar {
+  background-color: var(--gezux-surface) !important;
+  border-right: 1px solid var(--gezux-border) !important;
+}
+
+.fi-sidebar-header {
+  border-bottom: 1px solid var(--gezux-border) !important;
+}
+
+.fi-sidebar-nav-groups .fi-sidebar-group-label {
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: var(--gezux-text-subtle) !important;
+  padding: 0.5rem 0.75rem 0.25rem !important;
+}
+
+.fi-sidebar-item-button {
+  border-radius: 0.65rem !important;
+  transition: all 0.15s ease-in-out !important;
+  font-weight: 500 !important;
+  font-size: 0.825rem !important;
+}
+
+.fi-sidebar-item-button:hover {
+  background-color: var(--gezux-hover) !important;
+}
+
+.fi-sidebar-item.fi-active .fi-sidebar-item-button {
+  background-color: var(--gezux-primary-light) !important;
+  color: var(--gezux-primary) !important;
+  font-weight: 600 !important;
+}
+
+/* Topbar header */
+.fi-topbar {
+  background-color: var(--gezux-surface) !important;
+  border-bottom: 1px solid var(--gezux-border) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+/* ==========================================================================
+   CARDS, WIDGETS & SECTIONS
+   ========================================================================== */
+
+.fi-section, .fi-wi-stats-overview-stat, .fi-ta-ctn {
+  background-color: var(--gezux-card) !important;
+  border: 1px solid var(--gezux-border) !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03), 0 1px 2px -1px rgba(0, 0, 0, 0.03) !important;
+}
+
+.fi-section-header {
+  border-bottom: 1px solid var(--gezux-border) !important;
+  padding-bottom: 0.875rem !important;
+}
+
+/* ==========================================================================
+   TABLES & LISTINGS
+   ========================================================================== */
+
+.fi-ta-table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+}
+
+.fi-ta-header-cell {
+  background-color: var(--gezux-elevated) !important;
+  border-bottom: 1px solid var(--gezux-border) !important;
+  font-size: 0.725rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  color: var(--gezux-text-muted) !important;
+}
+
+.fi-ta-row {
+  transition: background-color 0.15s ease !important;
+}
+
+.fi-ta-row:hover {
+  background-color: var(--gezux-hover) !important;
+}
+
+.fi-ta-cell {
+  border-bottom: 1px solid var(--gezux-border) !important;
+}
+
+/* ==========================================================================
+   FORMS, INPUTS & SELECTS
+   ========================================================================== */
+
+.fi-input, .fi-select-input, textarea.fi-input {
+  background-color: var(--gezux-elevated) !important;
+  border: 1px solid var(--gezux-border-strong) !important;
+  border-radius: 0.65rem !important;
+  color: var(--gezux-text-primary) !important;
+  font-size: 0.875rem !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+.fi-input:focus, .fi-select-input:focus, textarea.fi-input:focus {
+  border-color: var(--gezux-primary) !important;
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.25) !important;
+  outline: none !important;
+}
+
+.fi-fo-field-wrp-label {
+  font-weight: 600 !important;
+  font-size: 0.815rem !important;
+  color: var(--gezux-text-primary) !important;
+}
+
+.fi-fo-field-wrp-helper-text {
+  font-size: 0.75rem !important;
+  color: var(--gezux-text-muted) !important;
+}
+
+/* ==========================================================================
+   BUTTONS & BADGES
+   ========================================================================== */
+
+.fi-btn-primary {
+  background-color: var(--gezux-primary) !important;
+  color: #FFFFFF !important;
+  border-radius: 0.65rem !important;
+  font-weight: 600 !important;
+  transition: all 0.15s ease-in-out !important;
+  box-shadow: 0 2px 4px rgba(124, 58, 237, 0.2) !important;
+}
+
+.fi-btn-primary:hover {
+  background-color: var(--gezux-primary-hover) !important;
+}
+
+.fi-badge {
+  border-radius: 9999px !important;
+  font-weight: 600 !important;
+  font-size: 0.725rem !important;
+  letter-spacing: 0.02em !important;
+}
+
+/* ==========================================================================
+   MODALS & DRAWERS
+   ========================================================================== */
+
+.fi-modal-window {
+  background-color: var(--gezux-surface) !important;
+  border: 1px solid var(--gezux-border-strong) !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+
+.fi-modal-header {
+  border-bottom: 1px solid var(--gezux-border) !important;
+}
+
+.fi-modal-footer {
+  border-top: 1px solid var(--gezux-border) !important;
+  background-color: var(--gezux-elevated) !important;
+}
+
+/* ==========================================================================
+   CUSTOM BLADE PAGES THEME ADAPTATION (ADMIN / BRAND / CLIPPER)
+   Automatically adapt custom cards, headers, toolbars & stats in Light Mode
+   while preserving Obsidian/Graphite in Dark Mode
+   ========================================================================== */
+
+html:not(.dark) .bg-\[\#121218\],
+html:not(.dark) .bg-\[\#0b0b10\],
+html:not(.dark) .bg-\[\#18181F\],
+html:not(.dark) .bg-\[\#161822\],
+html:not(.dark) .bg-\[\#161622\],
+html:not(.dark) .bg-\[\#070708\],
+html.light .bg-\[\#121218\],
+html.light .bg-\[\#0b0b10\],
+html.light .bg-\[\#18181F\],
+html.light .bg-\[\#161822\],
+html.light .bg-\[\#161622\],
+html.light .bg-\[\#070708\] {
+  background: var(--gezux-card) !important;
+  border-color: var(--gezux-border) !important;
+  color: var(--gezux-text-primary) !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04) !important;
+}
+
+html:not(.dark) .border-white\/10,
+html:not(.dark) .border-white\/5,
+html:not(.dark) .border-white\/20,
+html.light .border-white\/10,
+html.light .border-white\/5,
+html.light .border-white\/20 {
+  border-color: var(--gezux-border) !important;
+}
+
+html:not(.dark) .bg-white\/5,
+html:not(.dark) .bg-white\/10,
+html.light .bg-white\/5,
+html.light .bg-white\/10 {
+  background-color: var(--gezux-hover) !important;
+}
+
+html:not(.dark) .bg-\[\#121218\] h1,
+html:not(.dark) .bg-\[\#121218\] h2,
+html:not(.dark) .bg-\[\#121218\] h3,
+html:not(.dark) .bg-\[\#121218\] .text-white,
+html:not(.dark) .bg-\[\#0b0b10\] .text-white,
+html:not(.dark) .bg-\[\#18181F\] .text-white,
+html.light .bg-\[\#121218\] h1,
+html.light .bg-\[\#121218\] h2,
+html.light .bg-\[\#121218\] h3,
+html.light .bg-\[\#121218\] .text-white,
+html.light .bg-\[\#0b0b10\] .text-white,
+html.light .bg-\[\#18181F\] .text-white {
+  color: var(--gezux-text-primary) !important;
+}
+
+html:not(.dark) .bg-\[\#121218\] .text-gray-400,
+html:not(.dark) .bg-\[\#0b0b10\] .text-gray-400,
+html:not(.dark) .bg-\[\#18181F\] .text-gray-400,
+html.light .bg-\[\#121218\] .text-gray-400,
+html.light .bg-\[\#0b0b10\] .text-gray-400,
+html.light .bg-\[\#18181F\] .text-gray-400 {
+  color: var(--gezux-text-secondary) !important;
+}
+
+html:not(.dark) .bg-\[\#121218\] .text-gray-500,
+html:not(.dark) .bg-\[\#0b0b10\] .text-gray-500,
+html:not(.dark) .bg-\[\#18181F\] .text-gray-500,
+html.light .bg-\[\#121218\] .text-gray-500,
+html.light .bg-\[\#0b0b10\] .text-gray-500,
+html.light .bg-\[\#18181F\] .text-gray-500 {
+  color: var(--gezux-text-muted) !important;
+}
+
+html:not(.dark) input.bg-\[\#0b0b10\],
+html:not(.dark) select.bg-\[\#0b0b10\],
+html:not(.dark) textarea.bg-\[\#0b0b10\],
+html.light input.bg-\[\#0b0b10\],
+html.light select.bg-\[\#0b0b10\],
+html.light textarea.bg-\[\#0b0b10\] {
+  background-color: #FFFFFF !important;
+  color: var(--gezux-text-primary) !important;
+  border-color: var(--gezux-border-strong) !important;
+}
+
+html:not(.dark) .divide-white\/5 > * + *,
+html:not(.dark) .divide-white\/10 > * + *,
+html.light .divide-white\/5 > * + *,
+html.light .divide-white\/10 > * + * {
+  border-color: var(--gezux-border) !important;
+}
+
